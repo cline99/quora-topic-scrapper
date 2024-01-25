@@ -18,7 +18,7 @@ def extract_ques_ans(html):
 
 def topic_scrpper(topic):
     options = webdriver.ChromeOptions()
-    #options.add_argument('--headless')
+    options.add_argument('--headless')
     options.add_argument('--ignore-certificate-errors')
     prefs = {"profile.managed_default_content_settings.images": 2}
     options.add_experimental_option("prefs", prefs)
@@ -49,7 +49,7 @@ def topic_scrpper(topic):
 
     print(len(qna))
 
-topic_scrpper('China')
+topic_scrpper('India')
 # As this CSV writer uses UTF-8, some of the characters are showing up as gibberish in CSV, if someone knows the fix, please do
 # csv_file_path = '{}.csv'.format(topic)
 
