@@ -18,9 +18,15 @@ jobs:
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
         echo $CONDA/bin >> $GITHUB_PATH
+
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        ref: main 
+      
     - name: Install dependencies
       run: |
-        conda env update --file environment.yml --name base
+        conda env create -f environment.yml
     - name: Lint with flake8
       run: |
         conda install flake8
