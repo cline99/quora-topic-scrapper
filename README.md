@@ -15,4 +15,4 @@ Make sure you have the required Python packages installed:
 
 pip install selenium
 
-pip install beautifulsoup4
+pip install bs4
