@@ -16,3 +16,13 @@ Make sure you have the required Python packages installed:
 pip install selenium
 
 pip install bs4
+
+Disclaimer
+----------
+
+This scraper is intended for educational purposes and personal use only. Use it responsibly and be aware of Quora's terms of service. The developer is not responsible for any misuse of this tool.
+
+Contributing
+------------
+
+If you have ideas on how to improve the scraper or encounter any issues, feel free to contribute by creating issues or submitting pull requests.
