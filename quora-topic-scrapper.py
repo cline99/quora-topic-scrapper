@@ -34,8 +34,8 @@ def extract_ques_ans(html):
 
     t_views = views
     t_views = float(views[0:len(views) - 1]) * 1000 if views[-1].upper() in ('K') else t_views
-    t_views = float(views[0:len(views) - 1]) * 100000 if views[-1].upper() in ('M') else t_views
-    t_views = float(views[0:len(views) - 1]) * 100000000 if views[-1].upper() in ('B') else t_views
+    t_views = float(views[0:len(views) - 1]) * 1000000 if views[-1].upper() in ('M') else t_views
+    t_views = float(views[0:len(views) - 1]) * 1000000000 if views[-1].upper() in ('B') else t_views
 
     if not(int(t_views) >= threshold_views and int(number_of_shares) >= threshold_shares):
         pass
