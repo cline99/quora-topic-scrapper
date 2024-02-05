@@ -1,7 +1,18 @@
-# quora-topic-scrapper
-Web Scrapper for quora.com/topic/&lt;> 
-Simple web scrapper build wiyh a combinition of regex and beautiful soup
+Quora Topic Web Scraper
+=======================
 
-required packages:
-selenium
-bs4
+This is a simple web scraper built specifically for extracting information from Quora topics. The scraper focuses on the Quora topic pages, making use of a combination of regular expressions (regex) and BeautifulSoup for parsing HTML content.
+
+Usage
+-----
+
+### Prerequisites
+
+Make sure you have the required Python packages installed:
+
+-   Selenium
+-   Beautiful Soup
+
+pip install selenium
+
+pip install beautifulsoup4
